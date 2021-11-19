@@ -70,7 +70,7 @@ const Words = () => {
         Testing (unit)</b>, <b>
         User Interviewing & Research</b>, <b>
         User Training</b>, 
-        and that's all I could think of for now.
+        and that's all I could think of, for now.
     </p>
     </div>
     </>
