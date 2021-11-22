@@ -1,11 +1,10 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 
 const Words = () => {
   
   return (
     <>
-    
-    <div>
+    <div className='wordContainer' id='introContainer'>
     <h1>
     Hi, I'm Jasper Croome.
     </h1>
@@ -21,7 +20,7 @@ const Words = () => {
     </p>
     </div>
 
-    <div>
+    <div className='wordContainer' id='workExamplesContainer'>
     <h4>
       Work Examples
     </h4>
@@ -29,11 +28,14 @@ const Words = () => {
       Outside of work, I've had the oppourtunity to build some interesting things, like <br/><a 
       href="https://benicer.vercel.app/">a 3D globe to motivate people to be nicer</a> and <a 
       href="https://audioforma.vercel.app/#">a full-stack application to analyze the emotion in your spotify playlist</a>.
-      <br/>At work, you can believe me when I say that I build very cool things, all day long.
+      <br/>At work, I build very cool things, all day long. This includes things like <br/>
+      <b>A bespoke web application built with react.js, Typescript & this library (👇) providing team managers with insights into group performance.</b><br/>
+      <b>A Data Visualization Library leveraging d3.js, react.js, and Typescript to deliver a delightful developer experience.</b><br/>
+      <b>A fleet of automated Analytics pipelines built on the AWS Stack, bringing data from DynamoDB through to insightful end-user facing dashbaords.</b><br/>
     </p>
     </div>
 
-    <div>
+    <div className='wordContainer' id='currentSkillsContainer'>
     <h4>
       Deepest Skills Today
     </h4>
@@ -47,7 +49,7 @@ const Words = () => {
     </p>
     </div>
 
-    <div>
+    <div className='wordContainer' id='futureSkillsContainer'>
     <h4>Libraries and Frameworks I'm Learning</h4>
     <p>
       Nothing ever stays in place forever, so I'm also working to get up-to-speed with <br/>
@@ -56,8 +58,8 @@ const Words = () => {
     </p>
     </div>
 
-    <div>
-    <h4>Other technologies</h4>
+    <div className='wordContainer' id='otherSkillsContainer'>
+    <h4>Other skills</h4>
     <p>
       I'm proud of my t-shaped skillset, and there are some dev-adjacent skills I've picked up on my journey.
       Namely, <b>
@@ -66,6 +68,8 @@ const Words = () => {
         aws</b>, <b>
         git cli</b>, <b>
         Mentoring</b>, <b>
+        Microsoft Excel</b>, <b>
+        Python</b>, <b>
         Tableau</b>, <b>
         Testing (unit)</b>, <b>
         User Interviewing & Research</b>, <b>

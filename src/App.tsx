@@ -1,17 +1,25 @@
 import React, {useState, useEffect} from 'react';
+import Slider from './Slider';
 import Words from './Words';
+import Cards from './Cards'
 
 function App() {
-  // Create the count state.
-  const [count, setCount] = useState(0);
-  // Update the count (+1 every second).
-  useEffect(() => {
-    const timer = setTimeout(() => setCount(count + 1), 1000);
-    return () => clearTimeout(timer);
-  }, [count, setCount]);
-  // Return the App component.
+  const options = ['boring','fun!']
+  const [selection,setSelection] = useState(options[0])
   return (
-    <Words/>
+    <>
+    <Slider 
+      color="slateBlue" 
+      optionManager={[[selection],setSelection]}
+      options={options}
+    />
+    <div style={{overflowX:'clip'}}>
+      {(selection === 'boring')
+      ? <Words/>
+      : <Cards/>
+    }
+    </div>
+    </>
   );
 }
 
