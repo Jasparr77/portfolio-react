@@ -31,7 +31,6 @@ const Warning = (props:WarningProps) => {
     padding:'10px',
     marginTop:'10px',
     opacity:'.8',
-    width:'45%',
     borderRadius:'12px',
     color:'white',
     position:'fixed',

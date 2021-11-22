@@ -8,8 +8,8 @@ function App() {
     <Words/>
     <Warning
       color={'salmon'}
-      header='this site is kind of boring, for now.'
-      text={"I\'m working on making it cooler, though. Come back soon!"}
+      header='This site is boring.'
+      text={"...for now. I\'m working on making it cooler, though. Come back soon!"}
       />
     </>
   );
