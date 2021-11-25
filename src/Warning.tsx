@@ -11,7 +11,14 @@ type WarningProps = {
 const Warning = (props:WarningProps) => {
   const {header, text, color} = props
 
-  const headerBarStyle:Partial<CSSProperties> = {width:'120%', height:'15px', position:'relative',top:'0px',backgroundColor:color, margin:'-10px',marginBottom:'5px' }
+  const headerBarStyle:Partial<CSSProperties> = {
+    width:'120%', 
+    height:'15px', 
+    position:'relative',
+    top:'0px',
+    backgroundColor:color, 
+    margin:'-10px',
+    marginBottom:'5px' }
 
   const hideButtonStyle:Partial<CSSProperties> = {
     position:"relative",
@@ -23,7 +30,7 @@ const Warning = (props:WarningProps) => {
     cursor:'pointer',
     backgroundColor:'whitesmoke',
     color:'black',
-    borderRadius:'12px'
+    borderRadius:'12px',
   }
 
   const warningStyle:Partial<CSSProperties> = {
@@ -37,7 +44,8 @@ const Warning = (props:WarningProps) => {
     top: '5px',
     right: '5px',
     transition: 'opacity 1s, right 1s ease',
-    overflow:'clip'
+    overflow:'hidden',
+    borderCollapse: 'separate'
   }
   const [showStyle, setShowStyle] = useState(true)
 
