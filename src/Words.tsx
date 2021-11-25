@@ -25,7 +25,7 @@ const Words = () => {
       Work Examples
     </h4>
     <p>
-      Outside of work, I've had the oppourtunity to build some interesting things, like <br/><a 
+      Outside of work, I've had the opportunity to build some interesting things, like <br/><a 
       href="https://benicer.vercel.app/">a 3D globe to motivate people to be nicer</a> and <a 
       href="https://audioforma.vercel.app/#">a full-stack application to analyze the emotion in your spotify playlist</a>.
       <br/>At work, I build very cool things, all day long. This includes things like <br/>

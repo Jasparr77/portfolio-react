@@ -10,7 +10,7 @@ const Words = () => {
     href: "https://www.linkedin.com/in/jaspercroome/"
   }, "LinkedIn"), " | ", /* @__PURE__ */ React.createElement("a", {
     href: "https://twitter.com/crasperjoome?lang=en"
-  }, "Twitter"))), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("h4", null, "Work Examples"), /* @__PURE__ */ React.createElement("p", null, "Outside of work, I've had the oppourtunity to build some interesting things, like ", /* @__PURE__ */ React.createElement("br", null), /* @__PURE__ */ React.createElement("a", {
+  }, "Twitter"))), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("h4", null, "Work Examples"), /* @__PURE__ */ React.createElement("p", null, "Outside of work, I've had the opportunity to build some interesting things, like ", /* @__PURE__ */ React.createElement("br", null), /* @__PURE__ */ React.createElement("a", {
     href: "https://benicer.vercel.app/"
   }, "a 3D globe to motivate people to be nicer"), " and ", /* @__PURE__ */ React.createElement("a", {
     href: "https://audioforma.vercel.app/#"
