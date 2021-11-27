@@ -1,6 +1,6 @@
 import React, { CSSProperties, useState } from 'react'
 import ReactDom from 'react-dom'
-import { useTransition } from 'react-spring'
+import { useTransition } from '@react-spring/web'
 
 type WarningProps = {
   header:string,

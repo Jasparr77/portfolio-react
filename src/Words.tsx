@@ -29,9 +29,9 @@ const Words = () => {
       href="https://benicer.vercel.app/">a 3D globe to motivate people to be nicer</a> and <a 
       href="https://audioforma.vercel.app/#">a full-stack application to analyze the emotion in your spotify playlist</a>.
       <br/>At work, I build very cool things, all day long. This includes things like <br/>
-      <b>A bespoke web application built with react.js, Typescript & this library (👇) providing team managers with insights into group performance.</b><br/>
       <b>A Data Visualization Library leveraging d3.js, react.js, and Typescript to deliver a delightful developer experience.</b><br/>
-      <b>A fleet of automated Analytics pipelines built on the AWS Stack, bringing data from DynamoDB through to insightful end-user facing dashbaords.</b><br/>
+      <b>A bespoke web application built with react.js, Typescript & this library (☝️) providing team managers with insights into group performance.</b><br/>
+      <b>A fleet of automated Analytics pipelines built on the AWS Stack, bringing data from DynamoDB through to insightful end-user facing dashboards.</b><br/>
     </p>
     </div>
 

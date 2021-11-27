@@ -14,11 +14,11 @@ function App() {
       optionManager={[[selection],setSelection]}
       options={options}
     />
-      <Warning
+      {/* <Warning
         color={'salmon'}
         header='This site is boring.'
         text={"...for now. I\'m working on making it cooler, though. Come back soon!"}
-        />
+        /> */}
     <div style={{overflowX:'clip'}}>
       {(selection === 'boring')
       ? <Words/>
