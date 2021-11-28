@@ -42,4 +42,5 @@ small, .text_small {font-size: 0.707rem;}
 #arrowContainer {
   position: fixed;
   bottom: 20px;
+  right:20px;
 }
