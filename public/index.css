@@ -37,6 +37,7 @@ small, .text_small {font-size: 0.707rem;}
 .wordContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 #arrowContainer {

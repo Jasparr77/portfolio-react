@@ -1,13 +1,15 @@
 import { useSpring, animated } from '@react-spring/web'
 import React, { CSSProperties, useEffect, useMemo, useState } from 'react'
-import { useScroll } from 'react-use-gesture'
 import Words from './Words'
 
+// TODO: use scrollama, you noob
 
 const Cards = () =>{
   const springConfig = {
     loop: { reverse: true },
   }
+
+  const [scrollComplete, setScrollComplete] = useState(false)
   
   const arrowStyles = useSpring<CSSProperties>({
     from:{
@@ -17,6 +19,11 @@ const Cards = () =>{
       y:15,
     },
     ...springConfig
+  })
+
+  const svgStyles = useSpring<CSSProperties>({
+    transform:scrollComplete? 'scale(1,-1)' : 'scale(1,1)',
+    transformScale:'center'
   })
 
   const shadowStyles = useSpring<CSSProperties>({
@@ -37,12 +44,15 @@ const Cards = () =>{
     ...springConfig
   })
 
-  
   const scrollClickHandler = (scrollPos:number)=>{
-    if (scrollPos <= document.body.scrollHeight - window.innerHeight){
+    const scrollFlipTrigger = (document.body.scrollHeight - (window.innerHeight))
+    if (scrollPos / scrollFlipTrigger <= 1){
       window.scrollBy({top:window.innerHeight, behavior:'smooth'})
-      console.log(document.body.scrollHeight, window.scrollY)
-    } else window.scrollTo({top:0,behavior:'smooth'})
+      setScrollComplete(()=>false)
+    } else {
+      window.scrollTo({top:0,behavior:'smooth'})
+      setScrollComplete(()=>true)
+    }
   }
 
   useEffect(()=>{
@@ -65,7 +75,7 @@ const Cards = () =>{
       width="60px" 
       height="80px" 
       id="arrowContainer"
-      style={{cursor:'pointer'}}
+      style={{cursor:'pointer',...svgStyles}}
       onClick={()=>scrollClickHandler(window.scrollY)}
       >
       <animated.ellipse
