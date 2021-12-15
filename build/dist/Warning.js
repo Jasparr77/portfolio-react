@@ -2,7 +2,15 @@ import React, {useState} from "../_snowpack/pkg/react.js";
 import ReactDom from "../_snowpack/pkg/react-dom.js";
 const Warning = (props) => {
   const {header, text, color} = props;
-  const headerBarStyle = {width: "120%", height: "15px", position: "relative", top: "0px", backgroundColor: color, margin: "-10px", marginBottom: "5px"};
+  const headerBarStyle = {
+    width: "120%",
+    height: "15px",
+    position: "relative",
+    top: "0px",
+    backgroundColor: color,
+    margin: "-10px",
+    marginBottom: "5px"
+  };
   const hideButtonStyle = {
     position: "relative",
     textAlign: "center",
@@ -26,7 +34,8 @@ const Warning = (props) => {
     top: "5px",
     right: "5px",
     transition: "opacity 1s, right 1s ease",
-    overflow: "clip"
+    overflow: "hidden",
+    borderCollapse: "separate"
   };
   const [showStyle, setShowStyle] = useState(true);
   const returnStyle = (useState2) => {

@@ -1,6 +1,8 @@
 {
   "imports": {
+    "@react-spring/web": "./@react-spring/web.js",
     "react": "./react.js",
-    "react-dom": "./react-dom.js"
+    "react-dom": "./react-dom.js",
+    "react-use-gesture": "./react-use-gesture.js"
   }
 }

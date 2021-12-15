@@ -6,7 +6,7 @@ const Words = () => {
     <>
     <div className='wordContainer' id='introContainer'>
     <h1>
-    Hi, I'm Jasper Croome.
+    👋 Hi, I'm Jasper Croome.
     </h1>
     <p>
       I make delightful user experiences online through the use of modern web technologies.
